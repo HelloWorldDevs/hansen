@@ -1,0 +1,33 @@
+#section-reviews {
+  background-image: url('/assets/reviews-bg.jpg');
+  background-attachment: fixed;
+  @include parallax-background;
+
+  .heading {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    h2 {
+      font-family: $ff-roboto-condensed;
+      font-weight: 300;
+      color: #4A6456;
+      margin-bottom: 0;
+      line-height: 1;
+    }
+  }
+
+
+
+
+  @include birdeye-footer();
+
+  /// Mobile fix for standard birdeye review restack
+  @media screen and (max-width: $width-sm) {
+    background-color: #b1c1d0;
+    background-image: none;
+
+    .mobile-image {
+      margin-top: -50px;
+    }
+  }
+
+}

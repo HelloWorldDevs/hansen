@@ -1,0 +1,105 @@
+.phone-slab {
+
+  &:not(.phone-slab-2) {
+    background: radial-gradient(#ffffff, #C9CFC4);
+  }
+  //fix to make it transparent
+
+  h6 {
+    font-family: $ff-open;
+    color: #4a6456;
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+
+  .phone-number--lead {
+    font-size: 17px;
+    color: #4a6456;
+    font-weight: 400;
+
+  }
+
+  .text {
+    font-family: $ff-lato;
+    color: #4A6456;
+  }
+
+  .phone-number {
+    font-family: $ff-roboto-condensed;
+    color: #47607E;
+    font-weight: 900;
+    a:hover {
+      color: $c-red-grey !important;
+      text-decoration: none;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+    @media screen and (max-width: $width-md) {
+      margin-bottom: $spacing-sm;
+    }
+    &--sub {
+      font-weight: 900;
+      color: #4a6456;
+    }
+  }
+
+  .container {
+    padding-top: 20px;
+    padding-bottom: $spacing-md;
+  }
+
+  .row {
+    @media screen and (min-width: $width-md+1) {
+    display: flex;
+    }
+    .btn {
+      @media screen and (min-width: $width-md+1) {
+        @include vertical-center();
+      }
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  h3,
+  h5,
+  h6 {
+    line-height: $lh-sm;
+    margin-bottom: 0;
+  }
+  h3 {
+    @media screen and (max-width: $width-md) {
+      margin-bottom: $spacing-md;
+    }
+  }
+  .row:first-child {
+    padding-bottom: $spacing-sm;
+  }
+  &__left {
+    border-right: solid 2px #6c480c;
+    text-align: right;
+    margin-top: 5px;
+    @media screen and (max-width: $width-md) {
+      text-align: center;
+      border-right: none;
+    }
+    @media screen and (max-width: $width-sm) {
+    }
+    @media screen and (max-width: $width-xs) {
+    }
+  }
+  &__right {
+    text-align: left;
+    @media screen and (max-width: $width-md) {
+      text-align: center;
+      margin-bottom: $spacing-sm;
+    }
+    @media screen and (max-width: $width-sm) {
+    }
+    @media screen and (max-width: $width-xs) {
+    }
+  }
+
+
+}

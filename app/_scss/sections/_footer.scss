@@ -1,0 +1,52 @@
+//Overrides for Canvas
+#footer {
+  position: relative;
+  background-color: #47607E;
+  border-top: none;
+  margin-top: 0 !important;
+  a {
+    @include link-color($c-white);
+  }
+  p {
+    font-weight: 100;
+    font-size: 14px;
+    color: white;
+    @media screen and (max-width: $width-md) {
+      float: none;
+    }
+  }
+  @media screen and (max-width: $width-md) {
+    text-align: center;
+  }
+
+  .footer-padding {
+    padding: 40px;
+    @media (max-width: $width-md) {
+      padding: 20px;
+    }
+  }
+
+  @include social-media-link('facebook');
+  @include social-media-link('twitter');
+  @include social-media-link('google');
+  @include social-media-link('pinterest');
+  @include social-media-link('linkedin');
+
+  .flex--wrapper {
+    .text {
+      text-align: center;
+    }
+    .social-media-links {
+        float: right;
+      @media screen and (max-width: $width-md) {
+        a { float: none !important; }
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+  }
+
+}
+
+

@@ -1,0 +1,138 @@
+#section-specials {
+
+    background-image: url('/assets/specials-bg.jpg');
+    @include parallax-background;
+
+
+  .heading {
+
+    padding-top: $spacing-md;
+    padding-bottom: $spacing-md;
+
+    h2 {
+      font-family: $ff-roboto-condensed;
+      font-weight: 100;
+      color: #ffffff;
+      margin-bottom: 0;
+    }
+    h3 {
+      font-family: $ff-lato;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0;
+    }
+  }
+
+  .card {
+    //height fix
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba($c-white, 0);
+    text-align: center;
+    height: 100%;
+    border-radius: 5px;
+    color: $c-white;
+
+
+    .top {
+      height: 180px;
+      border-bottom: 5px solid rgba(255, 255, 255, 0);
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      .price {
+        position: relative;
+        display: inline-block;
+        border-radius: 9999px;
+        border: solid 8px white;
+        height: 150px;
+        width: 150px;
+      }
+      h1 {
+        color: $c-white;
+        margin-bottom: 0;
+        padding: $spacing-sm;
+        padding-top: 20px;
+        padding-left: 25px;
+        line-height: $lh-xs;
+        font-family: $ff-open;
+        font-weight: 700;
+        font-size: 84px !important;
+        &:before {
+          font-family: $ff-lato;
+          content: '$';
+          font-size: 36px;
+          font-weight: 300;
+          position: absolute;
+          top: $spacing-md;
+          left: 5px;
+        }
+      }
+      h3 {
+        font-family: $ff-lato;
+        color: $c-white;
+        margin-bottom: 0;
+        line-height: $lh-xs;
+        padding-top: $spacing-md;
+        @include font-size(30px, 30px, 25px, 30px, 30px);
+        font-weight: 900;
+        padding-bottom: $spacing-sm;
+      }
+    }
+
+    .bottom {
+      height: 100%;
+
+      background-color: rgba($c-white, 1);
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      // Savings
+      h6:first-child {
+        padding-top: 80px;
+        text-transform: uppercase;
+        @include h5;
+        font-family: $ff-lato;
+        font-weight: 400;
+      }
+      .copy {
+        font-family: $ff-open;
+        padding-left: $spacing-sm;
+        padding-right: $spacing-sm;
+        color: #999999;
+        font-weight: 400;
+        margin-bottom: 80px;
+      }
+      p {
+        font-size: 14px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 100%;
+        padding-bottom: $spacing-sm;
+        color: $c-grey-red-4;
+      }
+    }
+  }
+  .card-1 .top {  background-color: $c-card1;  }
+  .card-2 .top {  background-color: $c-card2;  }
+  .card-3 .top {  background-color: $c-card3;  }
+  .card-1 .price {  background-color: #867D38;  }
+  .card-2 .price {  background-color: #FFB528;  }
+  .card-3 .price {  background-color: #5283C0;  }
+  .card-1 .bottom h6:first-child {  color: $c-card1;  }
+  .card-2 .bottom h6:first-child {  color: $c-card2;  }
+  .card-3 .bottom h6:first-child {  color: $c-card3;  }
+
+
+  .row {
+    display: flex;
+    padding-bottom: $spacing-xl;
+    @media screen and (max-width: $width-sm) {
+      display: block;
+      .card {
+        margin-bottom: $spacing-md;
+      }
+    }
+  }
+}
