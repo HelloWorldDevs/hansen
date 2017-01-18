@@ -65,6 +65,7 @@
   width: 100%;
   font-family: $ff-open;
   font-weight: 700;
+  position: absolute;
 
 
   #primary-menu-trigger {
@@ -73,8 +74,17 @@
   }
   #header-wrap {
     border-bottom: 0;
-    background-color: rgba($c-white, 1);
+    background-color: rgba($c-white, 0);
   }
+
+  // On scroll down
+  &.sticky-header {
+    #header-wrap {
+      background-color: rgba($c-white, 1);
+    }
+
+  }
+
   #logo {
     padding-right: 0;
     margin-right: 0px;
