@@ -1,54 +1,25 @@
 #section-about {
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 100px;
 
-  @include parallax-background();
-  background-position: bottom center;
+  .video--wrapper {
+    height: 500px;
+    background-image: url('/assets/video-bg.jpg');
+    background-position: center center;
+  }
 
-
-  .heading {
+  .text {
+    h2 {
+      color: #ffffff;
+      margin-bottom: 0;
+    }
+    i {
+      font-size: 40px;
+      color: #ffffff;
+      border-radius: 9999px;
+      border: solid 2px white;
+      width: 64px;
+    }
     text-align: center;
-    h2{
-      font-family: $ff-roboto-condensed;
-      color: #4a6456;
-      font-weight: 300;
-      span {
-        @include h3;
-      }
-    }
-  }
-
-  p {
-    font-family: $ff-lato;
-    color: #414b4d;
-    font-weight: 400;
-  }
-
-  p.additional {
-    color: #545c5e;
-    font-style: italic;
-    font-family: $ff-lato;
-  }
-
-  .bio-image {
-    text-align: center;
-    @media screen and (max-width: $width-md) {
-      margin-bottom: $spacing-md;
-    }
-    img {
-      border-radius: 45px;
-    }
-  }
-
-  .row {
-    @media screen and (min-width: $width-md+1) {
-      display: flex;
-    }
-    &>div:last-child {
-      background-color: #fff;
-      padding: $spacing-md;
-      color: $c-grey;
-    }
+    @include vertical-center();
   }
 }
