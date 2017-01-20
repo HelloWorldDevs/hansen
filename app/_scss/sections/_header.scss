@@ -1,5 +1,6 @@
-
 #header {
+
+  transition: none;
 
   width: 100%;
   font-family: $ff-open;
@@ -13,13 +14,16 @@
   }
   #header-wrap {
     border-bottom: 0;
-    background-color: rgba($c-white, 0);
+    background-color: rgba(#375B79, 0);
+    @media screen and (max-width: $width-md) {
+      background-color: rgba(#375B79, 1);
+    }
   }
 
   // On scroll down
   &.sticky-header {
     #header-wrap {
-      background-color: rgba($c-white, 1);
+      background-color: rgba(#375B79, 0.9);
     }
 
   }
@@ -30,40 +34,74 @@
     border-right: none;
     img {
       margin-top: -10px;
-      padding-left: 40px;
+      padding-left: 20px;
       height: auto !important;
+      @media screen and (max-width: $width-sm) {
+        margin-top: 10px;
+      }
     }
     div {
       display: inline-block;
     }
-
     // Additional name info next to logo
     .additional-name {
       display: inline-block;
       padding-top: 40px;
-      padding-left: 20px;
-
+      padding-left: 15px;
       p{
         border-left: solid 2px #ffffff;
-        padding-left: 20px;
+        padding-left: 15px;
         color: #ffffff;
         line-height: 1.5;
         margin-bottom: 0;
         font-family: $ff-open;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 14px;
+      }
+      @media screen and (max-width: $width-md) {
+        padding-top: 20px;
       }
     }
+    .sticky-logo {
+      display: none;
+    }
+    .main-logo {
+      display: block;
+    }
+  }
 
+  //on scroll down
+  &.sticky-header #logo {
+    .additional-name {
+      padding-top: 15px;
+    }
+    .sticky-logo {
+      display: block;
+    }
+    .main-logo {
+      display: none;
+    }
   }
 
   //floating nav styling
-  #primary-menu {
+  &:not(.sticky-header) #primary-menu {
     margin-top: 20px;
     margin-right: 20px;
     background-color: #365B79;
     float: right;
-    padding: 30px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    //override canvas
+    ul li > a {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    @media screen and (max-width: $width-md) {
+      float: none;
+
+    }
   }
 
   #primary-menu > ul {
@@ -86,10 +124,7 @@
     #primary-menu-trigger {
       right: 0;
       left: inherit;
-      color: #575757;
-    }
-    #primary-menu .show {
-      background-color: $c-white;
+      color: #ffffff;
     }
   }
 
@@ -107,22 +142,14 @@
   font-family: $ff-open;
   font-weight: bold;
   letter-spacing: 1px;
-  font-size: 16px;
   text-transform: none;
-  padding: 0 14px;
-  @media screen and (max-width: 1300px) {
-    font-size: 15px;
-    padding: 27px 12px;
-    padding-bottom: 10px;
-  }
+  font-size: 14px;
+  padding: 0 5px;
   @media screen and (max-width: $width-lg) {
-    font-size: 14px;
+    font-size: 10px;
     letter-spacing: 0.7px;
-    padding: 27px 8px;
+    padding: 27px 5px;
     padding-bottom: 10px;
-  }
-  @media screen and (max-width: 1090px) {
-    font-size: 13px;
   }
   @media screen and (max-width: 991px) {
     padding-left: 40px !important;
