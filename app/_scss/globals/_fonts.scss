@@ -18,7 +18,7 @@ p {
 
 /// @group typography
 @mixin headings() {
-
+	font-family: $ff-open;
 }
 
 
@@ -59,7 +59,7 @@ p {
 
 @mixin h1() {
 	@include headings();
-	@include font-size(54px, 50px, 45px, 40px, 35px);
+	@include font-size(48px, 44px, 40px, 35px, 35px);
 }
 
 .h1,
@@ -70,7 +70,7 @@ h1 {
 
 @mixin h2($offset: 0) {
 	@include headings();
-	@include font-size(#{48 - $offset}px, #{41 - $offset}px, #{35 - $offset}px, #{32 - $offset}px, 30px);
+	@include font-size(#{40 - $offset}px, #{32 - $offset}px, #{28 - $offset}px, #{26 - $offset}px, 24px);
 }
 
 .h2,
@@ -90,7 +90,7 @@ h3 {
 
 @mixin h4() {
 	@include headings();
-	@include font-size(28px, 22px, 20px, 22px, 22px);
+	@include font-size(24px, 22px, 20px, 20px, 20px);
 }
 
 .h4,
