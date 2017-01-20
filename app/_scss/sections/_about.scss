@@ -5,21 +5,53 @@
     height: 500px;
     background-image: url('/assets/video-bg.jpg');
     background-position: center center;
+    .text {
+      h2 {
+        color: #ffffff;
+        margin-bottom: 0;
+      }
+      i {
+        font-size: 40px;
+        color: #ffffff;
+        border-radius: 9999px;
+        border: solid 2px white;
+        width: 64px;
+      }
+      text-align: center;
+      @include vertical-center();
+    }
   }
 
-  .text {
+
+  .main--wrapper {
+    background-image: url('/assets/bio.jpg');
+    background-position: center center;
+    @media screen and (max-width: $width-md) {
+     background-image: none;
+      background-color: #ffffff;
+    }
+    padding-top: 100px;
+    padding-bottom: 100px;
     h2 {
-      color: #ffffff;
+      color: #5fb3e5;
       margin-bottom: 0;
     }
-    i {
-      font-size: 40px;
-      color: #ffffff;
-      border-radius: 9999px;
-      border: solid 2px white;
-      width: 64px;
+    hr {
+      margin-top: 0;
+      margin-bottom: 20px;
+      border: 0;
+      border-top: 2px solid #5FB3E5;
     }
-    text-align: center;
-    @include vertical-center();
+    P {
+      color: #535353;
+      font-size: 16px;
+    }
+  }
+
+  .mobile--image {
+    img {
+      width: 100%;
+      margin-top: -150px;
+    }
   }
 }
