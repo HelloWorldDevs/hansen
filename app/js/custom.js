@@ -81,12 +81,12 @@
   
 
   $('#google-map5').gMap({
-    address: '42.4501103,-123.3240179',
+    address: '46.7209862,-117.0100655',
     maptype: 'ROADMAP',
     zoom: 15,
     markers: [
       {
-        address: "42.4501196,-123.3210373"
+        address: "46.720927,-117.0018168"
       }
     ],
     doubleclickzoom: false,
