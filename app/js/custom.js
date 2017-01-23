@@ -78,7 +78,21 @@
       }
     }
   });
-  
+
+
+  // For Vimeo videos, turns off the video on modal close
+  // ======================================================================================
+
+  $('#vimeoModal').on('hidden.bs.modal', function() {
+    $('#vimeoWrap').attr('src', $('#vimeoWrap').attr('src'));
+  });
+
+
+  // Fix for menu scroll to links. Offsets are needed for desktop but not tablet or mobile.
+  // ======================================================================================
+
+
+  // Store Menu Offests for reset on screen resize reset
 
   $('#google-map5').gMap({
     address: '46.7209862,-117.0100655',
@@ -100,11 +114,6 @@
       overviewMapControl: false
     }
   });
-
-  // Fix for menu scroll to links. Offsets are needed for desktop but not tablet or mobile.
-  // ======================================================================================
-  
-  // Store Menu Offests for reset on screen resize reset
   var menuOffsets = [];
   $('#primary-menu').find('a').each(function(index) {
     menuOffsets.push($(this).attr('data-offset'));
