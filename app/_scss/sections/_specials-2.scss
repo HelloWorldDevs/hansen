@@ -10,17 +10,21 @@
     padding-bottom: $spacing-md;
 
     h2 {
-      font-family: $ff-roboto-condensed;
       font-weight: 100;
-      color: #ffffff;
+      color: #5FB3E5;
       margin-bottom: 0;
+      text-transform: uppercase;
     }
     h3 {
-      font-family: $ff-lato;
-      font-weight: 700;
-      color: #ffffff;
+      font-weight: 400;
+      color: #0D5794;
       margin-bottom: 0;
     }
+  }
+
+  .card-wrapper {
+    height: 100%;
+    padding: 15px;
   }
 
   .card {
@@ -28,23 +32,21 @@
     display: flex;
     flex-direction: column;
 
-    background-color: rgba($c-white, 0);
+    border: solid 2px white;
     text-align: center;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 0.1px;
     color: $c-white;
 
 
     .top {
       height: 180px;
       border-bottom: 5px solid rgba(255, 255, 255, 0);
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
       .price {
         position: relative;
         display: inline-block;
         border-radius: 9999px;
-        border: solid 8px white;
+        //border: solid 8px white;
         height: 150px;
         width: 150px;
       }
@@ -52,7 +54,7 @@
         color: $c-white;
         margin-bottom: 0;
         padding: $spacing-sm;
-        padding-top: 20px;
+        padding-top: 30px;
         padding-left: 25px;
         line-height: $lh-xs;
         font-family: $ff-open;
@@ -65,18 +67,19 @@
           font-weight: 300;
           position: absolute;
           top: $spacing-md;
-          left: 5px;
+          left: 10px;
         }
       }
       h3 {
-        font-family: $ff-lato;
+        font-family: $ff-open;
         color: $c-white;
         margin-bottom: 0;
-        line-height: $lh-xs;
+        line-height: $lh-sm;
         padding-top: $spacing-md;
-        @include font-size(30px, 30px, 25px, 30px, 30px);
+        @include font-size(32px, 26px, 25px, 30px, 24px);
         font-weight: 900;
         padding-bottom: $spacing-sm;
+        text-transform: uppercase;
       }
     }
 
@@ -84,11 +87,10 @@
       height: 100%;
 
       background-color: rgba($c-white, 1);
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
       // Savings
       h6:first-child {
-        padding-top: 80px;
+        padding-top: 100px;
+        color: #ffffff;
         text-transform: uppercase;
         @include h5;
         font-family: $ff-lato;
@@ -98,7 +100,7 @@
         font-family: $ff-open;
         padding-left: $spacing-sm;
         padding-right: $spacing-sm;
-        color: #999999;
+        color: white;
         font-weight: 400;
         margin-bottom: 80px;
       }
@@ -110,28 +112,25 @@
         bottom: 0;
         width: 100%;
         padding-bottom: $spacing-sm;
-        color: $c-grey-red-4;
+        color: white;
       }
     }
   }
-  .card-1 .top {  background-color: $c-card1;  }
-  .card-2 .top {  background-color: $c-card2;  }
-  .card-3 .top {  background-color: $c-card3;  }
-  .card-1 .price {  background-color: #867D38;  }
-  .card-2 .price {  background-color: #FFB528;  }
-  .card-3 .price {  background-color: #5283C0;  }
-  .card-1 .bottom h6:first-child {  color: $c-card1;  }
-  .card-2 .bottom h6:first-child {  color: $c-card2;  }
-  .card-3 .bottom h6:first-child {  color: $c-card3;  }
-
+  .card-1, .card-1 .bottom {  background-color: #45B1D6;  }
+  .card-2, .card-2 .bottom {  background-color: #8ABB86;  }
+  .card-3, .card-3 .bottom {  background-color: #FFBE52;  }
+  .card-1 .price {  background-color: #0A76B9;  }
+  .card-2 .price {  background-color: #279567;  }
+  .card-3 .price {  background-color: #FA6D22;  }
 
   .row {
     display: flex;
     padding-bottom: $spacing-xl;
-    @media screen and (max-width: $width-sm) {
+    @media screen and (max-width: $width-md) {
       display: block;
-      .card {
-        margin-bottom: $spacing-md;
+      .card-wrapper {
+        margin-top: 30px;
+        margin-bottom: 15px;
       }
     }
   }
