@@ -4,7 +4,6 @@
   }
 
   .services--featured {
-
     //override bootstrap grid gutters
     .col-sm-6 {
       padding-left: 0;
@@ -13,8 +12,53 @@
   }
 
   .services--additional {
+    //override bootstrap grid gutters
+    .col-sm-6, .col-md-3 {
+      padding-left: 0;
+      padding-right: 0;
+      position: relative;
+    }
 
+    img {
+      width: 100%;
+    }
+
+    .services--thumbnail-text {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      &.even {
+        background-color: rgba(#48A6AF, 0.74);
+      }
+      &.odd {
+        background-color: rgba(#5D9BC0, 0.74);
+      }
+      h6 {
+        a { @include link-color(#ffffff); }
+        margin-bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 16px;
+        font-family: $ff-open;
+      }
+      .services-plus {
+        a:hover {
+          text-decoration: none;
+        }
+        width: 30px;
+        height: 30px;
+        line-height: 0.3;
+        border: solid 1px #ffffff;
+        border-radius: 9999px;
+        text-align: center;
+        font-size: 22px;
+      }
+    }
   }
+
 }
 
 .services-carousel {
