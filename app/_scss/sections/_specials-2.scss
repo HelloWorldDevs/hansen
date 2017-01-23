@@ -61,7 +61,7 @@
         font-weight: 700;
         font-size: 84px !important;
         &:before {
-          font-family: $ff-lato;
+          font-family: $ff-open;
           content: '$';
           font-size: 36px;
           font-weight: 300;
@@ -93,7 +93,7 @@
         color: #ffffff;
         text-transform: uppercase;
         @include h5;
-        font-family: $ff-lato;
+        font-family: $ff-open;
         font-weight: 400;
       }
       .copy {

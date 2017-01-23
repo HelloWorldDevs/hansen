@@ -56,6 +56,10 @@
       padding-left: 0;
       padding-right: 0;
       position: relative;
+      @media screen and (max-width: $width-sm) and (min-width: 550px) {
+        width: 50%;
+        float: left;
+      }
     }
 
     img {
@@ -124,7 +128,7 @@
 
     h5 {
       text-align: center;
-      font-family: $ff-roboto-condensed;
+      font-family: $ff-open;
       font-weight: 400;
       color: #536c5e;
       padding-top: 15px;
@@ -136,7 +140,7 @@
 .service-modal-wrapper {
   & .modal-title {
     @include h3;
-    font-family: $ff-mont;
+    font-family: $ff-open;
     font-weight: 700;
     color: $c-grey-red;
     padding-top: 10px;

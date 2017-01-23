@@ -22,7 +22,7 @@
 .location-card {
   margin: 30px 0;
   border-radius: 30px;
-  font-family: $ff-lato;
+  font-family: $ff-open;
   z-index: 0;
   @media (max-width: $width-md) {
     margin-bottom: 5px;
@@ -37,7 +37,7 @@
   }
   p {
     color: #222222;
-    font-family: $ff-lato;
+    font-family: $ff-open;
     font-weight: 400;
     font-size: 18px;
     margin-bottom: 0;
@@ -53,7 +53,7 @@
   }
   a>h6 {
     padding-top: 30px;
-    font-family: $ff-lato;
+    font-family: $ff-open;
     padding-bottom: $spacing-sm;
     font-weight: 400;
     font-size: 16px;
@@ -65,7 +65,6 @@
   .phone-number {
     line-height: $lh-sm;
     color: #47607E;
-    font-family: $ff-lato;
     font-weight: 900;
     margin-bottom: $spacing-sm;
     a:hover {
@@ -101,7 +100,7 @@
   h5 {
     color: $c-grey-red;
     text-transform: uppercase;
-    font-family: $ff-lato;
+    font-family: $ff-open;
     font-weight: 700;
     margin-bottom: 0;
     font-size: 21px;
