@@ -25,16 +25,20 @@
     h2 {
       color: #ffffff;
       margin-bottom: 5px;
+      line-height: 1.1;
+      &:first-child {
+        margin-top: 45px;
+      }
     }
     h4 {
       color: #ffffff;
       &.now-welcoming {
-        margin-top: 80px;
+        margin-top: 50px;
         margin-bottom: 5px;
       }
     }
     a {
-      margin-bottom: 70px;
+      margin-bottom: 40px;
     }
   }
   .slide2 {

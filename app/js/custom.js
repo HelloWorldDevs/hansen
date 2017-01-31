@@ -83,8 +83,14 @@
   // For Vimeo videos, turns off the video on modal close
   // ======================================================================================
 
+  var $vimeo = $('#vimeoWrap');
   $('#vimeoModal').on('hidden.bs.modal', function() {
-    $('#vimeoWrap').attr('src', $('#vimeoWrap').attr('src'));
+    $vimeo.attr('src', $vimeo.attr('src'));
+  });
+
+  var $youtube = $('#youtube-video');
+  $('#about-video').on('hidden.bs.modal', function() {
+    $youtube.attr('src', $youtube.attr('src'));
   });
 
 

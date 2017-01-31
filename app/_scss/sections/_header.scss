@@ -26,7 +26,7 @@
   // On scroll down
   &.sticky-header {
     #header-wrap {
-      background-color: rgba(#375B79, 0.9);
+      background-color: rgba(#375B79, 1);
     }
 
   }
@@ -42,6 +42,9 @@
       @media screen and (max-width: $width-sm) {
         margin-top: 10px;
       }
+    }
+    a:hover {
+      text-decoration: none;
     }
     div {
       display: inline-block;
