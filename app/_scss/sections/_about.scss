@@ -29,6 +29,8 @@
   .main--wrapper {
     background-image: url('/assets/bio.jpg');
     background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     @media screen and (max-width: $width-md) {
      background-image: none;
       background-color: #ffffff;
