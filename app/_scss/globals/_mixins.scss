@@ -112,9 +112,9 @@
     }
   }
   .icon-#{$name} {
-    color: white;
+    color: #666666;
     font-size: 25px;
-    width: 37px;
+    //width: 37px;
     text-align: center;
     border-radius: 8px;
     @media (max-width: $width-sm) {

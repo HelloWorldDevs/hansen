@@ -48,16 +48,28 @@
     font-family: $ff-open;
     font-weight: 400;
     font-size: 17px;
-    margin-bottom: $spacing-sm;
+    margin-bottom: 5px;
     line-height: $lh-sm;
   }
   a>h6 {
     padding-top: 30px;
     font-family: $ff-open;
     padding-bottom: $spacing-sm;
+    margin-bottom: 0;
     font-weight: 400;
     font-size: 16px;
     color: #FA6D22;
+  }
+  .existing {
+    margin-bottom: 30px;
+  }
+  h5.doctor {
+      color: #47607E;
+      font-family: $ff-open;
+      font-weight: 700;
+      margin-bottom: 0;
+      font-size: 21px;
+
   }
   a.btn {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
@@ -67,6 +79,7 @@
     color: #47607E;
     font-weight: 900;
     margin-bottom: $spacing-sm;
+    margin-top: 0;
     a:hover {
       color: #3B5170 !important;
       text-decoration: none;
@@ -79,8 +92,8 @@
     color: #575757;
   }
   .btn {
-    margin-top: $spacing-md;
     margin-bottom: $spacing-sm;
+    margin-top: 0;
   }
   h6:last-child {
     padding-bottom: $spacing-lg;
