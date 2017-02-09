@@ -107,6 +107,7 @@
   a.si-#{$name} {
     display: inline-block;
     margin-right: 20px;
+    border-radius: 50%;
     &:hover {
       text-decoration: none;
     }
@@ -116,7 +117,10 @@
     font-size: 25px;
     //width: 37px;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 50%;
+    &-plus {
+      border-radius: 50%;
+    }
     @media (max-width: $width-sm) {
       float: none;
       margin-right: auto;
